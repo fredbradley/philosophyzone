@@ -1,0 +1,21 @@
+{
+  "name": "philosophyzone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path sass sass/stylesheet.scss css/stylesheet.css",
+    "prod-css": "node-sass --include-path sass sass/stylesheet.scss css/stylesheet.min.css --output-style=compressed",
+    "watch": "nodemon -e scss -x \"npm run build\"",
+    "build": "concurrently --kill-others \"npm run build-css\" \"npm run prod-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.0"
+  }
+}

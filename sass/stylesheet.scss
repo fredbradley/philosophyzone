@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'widgets/golf-course';
+@import 'navbar/navbar';
+
+/* THEME COLORS */
+header.site-header,
+footer.site-footer,
+.widget>.widget-header,
+.quick-jump a {
+	background-color: $cranleigh-brand-color;
+}
+.widget {
+	border-color: $cranleigh-brand-color;
+}
+
+
+body.home main#main {
+	margin-top: 0px;
+}
+.op-row-day.highlighted>th,
+.op-row-day.highlighted>td {
+	color: $cranleigh-brand-color !important;
+}
+
+.widget_widget_op_overview>.widget-header {
+	margin-bottom: 0px;
+}
+
+
+
+footer.site-footer .ancillary,
+.menu-instruction {
+	color: #fff !important;
+}
+
+
+
+.gform_wrapper {
+	display:block;
+	padding:19px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border:1px solid #e3e3e3;
+	-webkit-box-shadow: inset 0px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0px rgba(0,0,0,0.05);
+	box-shadow: inset 0px rgba(0,0,0,0.05);
+	background-color:#f5f5f5;
+}
+
+body.home #main {
+	padding-top:30px;
+}
+
+.text-site-title {
+	color:#fff;
+	text-align: center;
+}

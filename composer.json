@@ -1,0 +1,24 @@
+{
+    "name": "fredbradley/philosophy-zone",
+    "description": "A Wordpress child theme based upon cranleigh-2016 for a new Cranleigh Activities Website.",
+    "require": {
+        "yahnis-elsts/admin-notices": "^1.0",
+        "jjgrainger/posttypes": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "Fred Bradley",
+            "email": "hello@fredbradley.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CranleighSchool\\PhilosophyZoneTheme\\": "app/"
+        },
+        "files": [
+            "app/helpers.php",
+            "app/Widgets/WidgetFooterLogo.php"
+        ]
+    }
+}
+

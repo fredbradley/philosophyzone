@@ -1,0 +1,22 @@
+#golf-course-status.course-open .fa {
+	color:#32cd32 !important;
+}
+#golf-course-status.course-closed .fa {
+	color:#FF0000 !important;
+}
+
+a#golf-course-status:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.widget.golf-course-status-widget {
+	border-color: #448C23 !important;
+}
+.widget.golf-course-status-widget .widget-header {
+	background: #448C23 !important;
+}
+.widget.golf-course-status-widget .widget-header>h4.widget-title:before {
+	font-family: cranfont;
+	content: "\e012" !important;
+}

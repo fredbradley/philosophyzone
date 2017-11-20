@@ -1,0 +1,6 @@
+#owl-demo .item{
+  margin: 10px;
+}
+#owl-demo .card-text {
+	height: 150px !important;
+}
