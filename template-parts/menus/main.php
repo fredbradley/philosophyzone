@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    <?php wp_nav_menu([
 		    "theme_location" => 'main-menu',
-		    "menu_class" => "nav navbar-nav"
+		    "menu_class" => "nav navbar-nav navbar-nav-justify"
 		   ]); ?>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

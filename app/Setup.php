@@ -3,12 +3,14 @@
 namespace CranleighSchool\PhilosophyZoneTheme;
 
 use CranleighSchool\PhilosophyZoneTheme\CustomPostTypes\PhilosophyDocsCustomPostType;
+use CranleighSchool\PhilosophyZoneTheme\Plugins\CranleighFAQs;
 
 class Setup {
 	public static function run() {
 		RemoveParentThemeSettings::run();
 		self::wpActionsFilters();
 		self::CustomPostTypes();
+		self::CustomPlugins();
 	}
 
 	public static function wpActionsFilters() {
@@ -17,7 +19,9 @@ class Setup {
 		add_action('widgets_init', array(get_called_class(), 'register_sidebars'));
 	}
 
-
+	public static function CustomPlugins() {
+		new CranleighFAQs();
+	}
 	public static function remove_custom_header( $wp_customize ) {
 		$wp_customize->remove_section( 'header_image' );
 	}

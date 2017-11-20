@@ -56,3 +56,18 @@ body.home #main {
 	color:#fff;
 	text-align: center;
 }
+
+@media (min-width: 768px){
+	.navbar-nav-justify {
+		margin: 0 auto;
+		display: table;
+		table-layout: auto;
+		float: none;
+		width: 100%;
+	}
+	.navbar-nav-justify>li {
+		display: table-cell;
+		float: none;
+		text-align: center;
+	}
+}
