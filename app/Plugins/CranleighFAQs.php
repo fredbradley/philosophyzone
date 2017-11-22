@@ -1,6 +1,8 @@
 <?php
 namespace CranleighSchool\PhilosophyZoneTheme\Plugins;
 
+use WP_Query;
+
 class CranleighFAQs {
 
 	public $collapsibles = "collapsibles";
