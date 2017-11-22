@@ -11,6 +11,7 @@ class Setup {
 		self::wpActionsFilters();
 		self::CustomPostTypes();
 		self::CustomPlugins();
+		new RolesAndCaps();
 	}
 
 	public static function wpActionsFilters() {
