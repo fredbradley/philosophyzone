@@ -2,6 +2,7 @@
 
 namespace CranleighSchool\PhilosophyZoneTheme;
 
+use CranleighSchool\PhilosophyZoneTheme\Customizer\Customizer;
 use CranleighSchool\PhilosophyZoneTheme\CustomPostTypes\PhilosophyDocsCustomPostType;
 use CranleighSchool\PhilosophyZoneTheme\Plugins\CranleighFAQs;
 
@@ -12,6 +13,7 @@ class Setup {
 		self::CustomPostTypes();
 		self::CustomPlugins();
 		new RolesAndCaps();
+		new Customizer();
 	}
 
 	public static function wpActionsFilters() {

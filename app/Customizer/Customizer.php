@@ -1,5 +1,5 @@
 <?php
-namespace CranleighSchool\PhilosophyZoneTheme;
+namespace CranleighSchool\PhilosophyZoneTheme\Customizer;
 
 use WP_Customize_Control;
 
@@ -69,7 +69,7 @@ class Customizer {
 			"label" => "test",
 			"section" => $section,
 			"settings" => $setting,
-			"type" => "wysiwyg"
+			"type" => "textarea"
 		]);
 
 
